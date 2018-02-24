@@ -1,7 +1,7 @@
 package pokemongamegogo;
 class Charmander extends Pokemon {
         private float damageCharmander;
-	public Charmander(String name, float weight, float stepLength, String pokemonType){
+	public Charmander(String name, float weight, float stepLength){
 		super(name, weight, stepLength, 1f, new String[] {"normal"});
                 damageCharmander = 8.3f;
 	}

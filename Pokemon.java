@@ -1,7 +1,7 @@
 package pokemongamegogo;
 import java.util.*;
 
-class Pokemon{
+public class Pokemon{
 	private String name;
 	private float weight;
 	private float stepLength;
@@ -13,8 +13,8 @@ class Pokemon{
 	public Pokemon(String name,
 		       float weight,
 		       float stepLength,
-                       String[] types,
-		       float gainingWeightStep
+		       float gainingWeightStep,
+                       String[] types
 		       ){
 		this.name = name;
 		this.weight = weight;
@@ -54,9 +54,9 @@ class Pokemon{
         public String getName(){
             return name;
 	}
-        
+        /*
         public String[] getType(){
             return types;
-	}
+	}*/
         
 }

@@ -5,6 +5,7 @@ class PokemonGameGoGo{
 		PokemonFarm pokemonFarm = new PokemonFarm();
 		CommandParser commandParser = new CommandParser(pokemonFarm);
 		commandParser.run();
+                
 	}
 
 }

@@ -1,7 +1,7 @@
 package pokemongamegogo;
 class Eevee extends Pokemon {
         private float damageEevee;
-	public Eevee(String name, float weight, float stepLength, String pokemonType){
+	public Eevee(String name, float weight, float stepLength){
 		super(name, weight, stepLength, 1f, new String[] {"normal"});
                 damageEevee = 5.6f;
 	}

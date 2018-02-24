@@ -1,7 +1,7 @@
 package pokemongamegogo;
 class Bulbasaur extends Pokemon {
         private float damageBulbasaur;
-	public Bulbasaur(String name, float weight, float stepLength, String pokemonType){
+	public Bulbasaur(String name, float weight, float stepLength){
 		super(name, weight, stepLength, 1f, new String[] {"normal"});
                 damageBulbasaur = 4.6f;
 	}
