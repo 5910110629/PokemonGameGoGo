@@ -2,6 +2,7 @@ package pokemongamegogo;
 import java.util.*;
 
 public class Pokemon{
+        private PokemonFarm pokemonFarm;
 	private String name;
 	private float weight;
 	private float stepLength;
@@ -53,6 +54,21 @@ public class Pokemon{
         
         public String getName(){
             return name;
+	}
+        
+        public void evolution(String typePokemon){
+            if(typePokemon.equals("Eevee")){
+                Espeon espeon = new Espeon(name, weight, stepLength);
+                Pokemon pokemon = espeon;
+            }
+            else if(typePokemon.equals("Charmander")){
+                Charmeleon charmeleon = new Charmeleon(name, weight, stepLength);
+                Pokemon pokemon = charmeleon;
+            }
+            else if(typePokemon.equals("Bulbasaur")){
+                Ivysaur ivysaur = new Ivysaur(name, weight, stepLength);
+                Pokemon pokemon = ivysaur;
+            }
 	}
         /*
         public String[] getType(){

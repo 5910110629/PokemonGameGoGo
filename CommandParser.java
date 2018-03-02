@@ -42,6 +42,8 @@ public class CommandParser{
 				this.deletePokemons();
                         else if(command.equals("wild"))
 				this.wildPokemons();
+                        else if(command.equals("evolution"))
+				this.evolutionPokemons();
 		}
 
 	}
@@ -190,6 +192,16 @@ public class CommandParser{
                 
 	}
         
-
+        
+        private void evolutionPokemons(){
+		System.out.print("Which pokemon do you want to evolution? : ");
+		String name = this.commandScanner.next();
+		if(name.equals("all")){
+			this.pokemonFarm.evolution("all");
+		}
+                else{
+                    this.pokemonFarm.evolution(name);
+                }
+	}
 }
 
